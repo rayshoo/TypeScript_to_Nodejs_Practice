@@ -16,6 +16,7 @@ User.init(
   {
     nickname: {
       type: DataTypes.STRING(20),
+      allowNull: false,
     },
     userId: {
       type: DataTypes.STRING(20),

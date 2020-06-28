@@ -5,7 +5,7 @@ import User from '../models/user';
 
 const router = express.Router();
 
-router.get('/', isLoggedIn, (req, res, next) => {
+router.get('/', isLoggedIn, (req: Express.Request, res: Express.Response) => {
   const user = req.user!.toJSON() as User;
   delete user.password;
   return res.json(user);

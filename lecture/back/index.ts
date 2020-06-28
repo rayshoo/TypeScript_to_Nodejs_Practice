@@ -5,8 +5,8 @@ import * as cookieParser from 'cookie-parser';
 import * as expressSession from 'express-session';
 import * as dotenv from 'dotenv';
 import * as passport from 'passport';
-import * as helmet from 'helmet';
 import * as hpp from 'hpp';
+import * as helmet from 'helmet';
 
 import { sequelize } from './models';
 
